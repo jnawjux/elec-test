@@ -6,13 +6,26 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Hello World!</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
+    <div class="title-box">
+      <h1>🍹 Tiki Time 🍹</h1>
+    </div>
+    <div class="container">
+      <div class="flex-rows">
+        <button type="button" class="btn btn-light btn-lg">Orange Juice</button>
+        <button type="button" class="btn btn-light btn-lg">Lemon Juice</button>
+        <button type="button" class="btn btn-light btn-lg">Lime Juice</button>
+      </div>
+      <div class="flex-rows">
+        <button type="button" class="btn btn-primary btn-lg">Grapefruit Juice</button>
+        <button type="button" class="btn btn-light btn-lg">Ginger Ale</button>
+        <button type="button" class="btn btn-light btn-lg">Grenadine</button>
+      </div>
+  </div>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>
